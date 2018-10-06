@@ -21,7 +21,7 @@ public class EditAlarm extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edi_alarm);
+        setContentView(R.layout.activity_edit_alarm);
 
         aName = findViewById(R.id.alarmName);
 
@@ -41,13 +41,13 @@ public class EditAlarm extends AppCompatActivity {
         });
 
         selSound = findViewById(R.id.soundSelect);
-        ArrayAdapter<CharSequence> soundList = ArrayAdapter.createFromResource(EditAlarm.this, R.array.critLevel, R.layout.activity_edi_alarm);
-        soundList.setDropDownViewResource(R.layout.activity_edi_alarm);
+        ArrayAdapter<CharSequence> soundList = ArrayAdapter.createFromResource(EditAlarm.this, R.array.critLevel, R.layout.activity_edit_alarm);
+        soundList.setDropDownViewResource(R.layout.activity_edit_alarm);
         selSound.setAdapter(soundList);
 
         selCrit = findViewById(R.id.critSelect);
-        ArrayAdapter<CharSequence> critList = ArrayAdapter.createFromResource(EditAlarm.this, R.array.critLevel, R.layout.activity_edi_alarm);
-        critList.setDropDownViewResource(R.layout.activity_edi_alarm);
+        ArrayAdapter<CharSequence> critList = ArrayAdapter.createFromResource(EditAlarm.this, R.array.critLevel, R.layout.activity_edit_alarm);
+        critList.setDropDownViewResource(R.layout.activity_edit_alarm);
         selCrit.setAdapter(critList);
 
     }
